@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Quote Generator</title>
+     <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/94287f3aad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <section class="section">
+          <container class="container">
+               <p>
+                    <!-- tampilkan fetch quote disini -->
+               </p>
+               <div>
+                    <p>
+                    <span class="quote"></span>
+                    <span class="fas fa-quote-left" style="font-size:3rem"></span>
+                    <span  id="quoteText"></span>
+                    </p>
+               </div>
+               <p class="author" id="author"></p>
+               <div class="foot-button">
+                    <button type="button" class="twitter-button" id="twitter" title="Tweet This!" onclick="onClickToTweet()">
+                         <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="new-quote" onclick="window.location.reload()">New Quote</button>
+               </div>
+          </container>
+     </section>
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="index.js"></script>
+</body>
+</html>
+
+
