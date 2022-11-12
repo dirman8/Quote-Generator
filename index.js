@@ -9,13 +9,11 @@ document.addEventListener("DOMContentLoaded", function() {
       let json = await quotesFetching.json();
       
       function calcIndex () {
-        console.log(json.length)
           let index = Math.round(Math.random() * json.length);
           return index
         }
 
       let quoteIndex = calcIndex();
-        console.log(quoteIndex);
 
       let quote = json[quoteIndex].text;
       let author = json[quoteIndex].author;

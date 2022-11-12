@@ -36,7 +36,14 @@ body {
 #quoteText {
      margin-left: 0.5rem;
      margin-bottom: 1rem;
-     font-size: 2.5rem;
+     font-size: 1.5rem;
+     font-weight: bold;
+}
+
+@media (max-width: 640px) {
+     #quoteText {
+          font-size: 1rem;
+     }
 }
 
 .author {
